@@ -1,0 +1,18 @@
+.scroll {
+	flex-grow: 1;
+	overflow-y: scroll;
+	transition: border-color .5s;
+	border-top-style: solid;
+	border-top-color: white;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 1px;
+	-webkit-overflow-scrolling: touch;
+	&--at-top {
+		border-top-color: transparent;
+	}
+	&--at-bottom {
+		border-bottom-color: transparent;
+	}
+}

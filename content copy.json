@@ -1,0 +1,55 @@
+{
+	"about": "<p>Cutting through the eternal facade of appearing creatively fulfilled, JUST AN IDEA tackles head on the fragility, insecurities and eventual light at the end of the tunnel we all experience when making work and putting our selves on the line.</p><p>There has always been a strong tendency to fetishise the new, the bold and the ‘original’.  It could be argued that the art of the twentieth century changed everything. Contemporary art was now defined by its newness, its wow factor and in the words of Ezra Pound’s overused maxim, the ability to “Make it New!.”  Artists, directors, filmmakers, photographers, musicians, scientists, writers, poets differentiated themselves through their authenticity or their own definitions of authenticity. How do ideas form from nothing? Why do we crave authenticity? How do we find it? Let’s not forget that to some extent the market is responsible for spitballing ‘genius’ and ‘authenticity’ to marginalise and profit. But, can authenticity be authentic unto itself? Or does it rely on others to confirm its authenticity? Why do we even make work? These are very difficult questions. Stroma Cairns' Just an Idea explores these very questions with sublime honesty and lucid clarity. Each ‘character’ describes their own working process which drifts alongside lilting reels of chromatic footage. Is it an inner monologue? Or the inspiration at the point of creation? At one point a voiceover says “because they’re dying they wanna leave something behind”  - is it this impermanence that creates the need for authenticity, for originality, to be distinct from one another?</p>",
+	"bio" : "",
+	"interviews": [{
+		"title": "Leave Something Behind",
+		"name": "Dad?",
+		"profession": "Dad",
+		"video": "dad.mp4",
+		"audio": "dad.mp3"
+	},{
+		"title": "What Does That Make Me?",
+		"name": "Imogen West",
+		"profession": "Mum",
+		"video": "mum.mp4",
+		"audio": "mum.mp3"
+	},{
+		"title": "In Case I'm Not Able",
+		"name": "Caroline Deeds",
+		"profession": "Filmmaker",
+		"video": "caroline.mp4",
+		"audio": "caroline.mp3"
+	},{
+		"title": "Always a Crisis",
+		"name": "Douglas Hart",
+		"profession": "Musician and Filmmaker",
+		"video": "douglas.mov",
+		"audio": "douglas.mp3"
+	}],
+	"credits": [{
+		"role": "Director",
+		"name": "Stroma Cairns",
+		"url": "http://stromacairns.co.uk"
+	},{
+		"role": "D.O.P.",
+		"name": "Ruben Woodin-Dechamps",
+		"url": "http://rwdfilm.com/"
+	},{
+		"role": "Editor",
+		"name": "Stroma Cairns",
+		"url": "http://stromacairns.co.uk"
+	},{
+		"role": "Music",
+		"name": "TBC"
+	},{
+		"role": "Text",
+		"name": "Freddie Farrow Fraser-Forsyth",
+		"url": "http://topsafe.tv"
+	},{
+		"role": "Design & Code",
+		"name": "Ben West",
+		"url": "http://bewe.me"
+	}]
+}
+
+

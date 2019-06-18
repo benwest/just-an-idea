@@ -1,0 +1,27 @@
+.button {
+	display: block;
+	text-align: center;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	border: $stroke solid white;
+	cursor: pointer;
+	line-height: 1.5em;
+	&--back {
+		&:after {
+			content: '';
+			display: block;
+			border-top: 1px solid transparent;
+			border-left: 1px solid transparent;
+			border-right: 1px solid white;
+			border-bottom: 1px solid white;
+			width: .5em;
+			height: .5em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform-origin: 75% 75%;
+			transform: translate(-80%, -75%) rotate(135deg)
+		}
+	}
+}

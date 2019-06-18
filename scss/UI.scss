@@ -1,0 +1,19 @@
+.ui {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .8;
+	pointer-events: visible;
+	transition: opacity 2s ease-in;
+	backface-visibility: hidden;
+	overflow: hidden;
+	@media ( min-width: $phone-breakpoint ) {
+		position: absolute;
+	}
+	&--disabled {
+		opacity: 0;
+		pointer-events: none;
+	}
+}

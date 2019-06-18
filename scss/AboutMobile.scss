@@ -1,0 +1,26 @@
+.about-mobile {
+	margin-top: $line;
+	margin-bottom: $line * 3;
+	h1 {
+		margin: 1rem 0;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__section {
+		margin-bottom: $line * 2;
+	}
+	&__credit {
+		a, span { display: block }
+		margin-bottom: $line;
+		text-align: center;
+		h1 {
+			margin: 0;
+		}
+	}
+	p {
+		margin-bottom: 1em;
+	}
+	a {
+		text-decoration: none;
+	}
+}

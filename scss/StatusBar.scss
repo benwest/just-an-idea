@@ -1,0 +1,25 @@
+.status-bar {
+	text-align: center;
+	font-size: .75em;
+	display: flex;
+	flex-shrink: 0;
+	@media ( max-width: $breakpoint ) {
+		padding: 0 .5rem;
+	}
+	&__item {
+		&:first-child { flex-grow: 1 }
+		// margin-right: .25em;
+		&--icons {
+			font-family: 'Wingdings';
+			letter-spacing: .1em;
+		}
+	}
+	&__icon {
+		// display: inline-block;
+		// width: 1.25em;
+		// text-align: center;
+	}
+	@media ( max-width: $breakpoint ) {
+		padding-top: .5rem;
+	}
+}

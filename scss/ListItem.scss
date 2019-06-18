@@ -1,0 +1,148 @@
+.list-item {
+	$transition-duration: .15s;
+	margin: $line 0;
+	transition: opacity $transition-duration;
+	cursor: pointer;
+	&--expanded {
+		cursor: inital;
+	}
+	&--disabled {
+		opacity: .5;
+	}
+	&__title {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__info {
+		text-align: center;
+	}
+	&__name {
+		display: inline-block;
+		&:after {
+			content: "·";
+			margin: .33em;
+		}
+	}
+	&__duration {
+		display: inline-block;
+	}
+	&__detail {
+		height: 0;
+		opacity: 0;
+		transition: height $transition-duration linear, opacity $transition-duration linear;
+		.list-item--expanded & {
+			height: 1.5rem;
+			opacity: 1;
+		}
+	}
+	&--link {
+		// margin: $line * 1.5 0;
+		display: block;
+		text-align: center;
+	}
+	// $padding: .5rem;
+	// margin: .5rem 0;
+	// display: flex;
+	// align-items: center;
+	// &__bubble {
+	// 	border: 1px solid white;
+	// 	display: flex;
+	// 	align-items: center;
+	// }
+	// &__button {
+	// 	$inset: .7em;
+	// 	$size: calc( #{ $line + $padding * 2 } - #{ $inset * 2 } );
+	// 	display: inline-block;
+	// 	height: $size;
+	// 	width: $size;
+	// 	border-radius: 50%;
+	// 	margin-left: $inset;
+	// 	&:after {
+	// 		$size: .3em;
+	// 		content: '';
+	// 		display: block;
+	// 		position: absolute;
+	// 		border-top: $size solid white;
+	// 		border-right: $size solid white;
+	// 		border-bottom: $size solid transparent;
+	// 		border-left: $size solid transparent;
+	// 		top: 50%;
+	// 		left: 50%;
+	// 		transform-origin: 75% 25%;
+	// 		transform: scale( 1, .75 ) translate(-75%, -25%) rotate( 45deg );
+	// 	}
+	// }
+	// &__title {
+	// 	padding: $padding .75rem $padding .25rem;
+	// 	display: inline-block;
+	// }
+	// &__time {
+	// 	padding: 0 .75rem;
+	// 	font-size: .6rem;
+	// 	line-height: 1;
+	// }
+	// &:nth-child( odd ) {
+	// 	flex-direction: row-reverse;
+	// 	.list-item__time {
+	// 		text-align: right;
+	// 	}
+	// 	.list-item__bubble {
+	// 		border-radius: 1.7rem 1.7rem 0 1.7rem;
+	// 	}
+	// }
+	// &:nth-child( even ) {
+	// 	.list-item__bubble {
+	// 		border-radius: 1.7rem 1.7rem 1.7rem 0;
+	// 	}
+	// }
+}
+
+
+// &__item {
+// 		counter-increment: item;
+// 		margin: .25rem 0;
+// 		box-shadow: inset 0 -3px 3px rgba( 255, 255, 255, 1 );
+// 		border-radius: 1em;
+// 		float: left;
+// 		padding: .75rem;
+// 		@mixin number {
+// 			content: counter(item);
+// 			width: 2rem;
+// 			display: inline-block;
+// 		}
+// 		&:nth-child( odd ) {
+// 			float: right;
+// 			&:before {
+// 				@include number;
+// 				margin-left: -3.5rem;
+// 				padding-right: 1.5rem;
+// 				text-align: right;
+// 			}
+// 		}
+// 		&:nth-child( even ) {
+// 			&:after {
+// 				@include number;
+// 				margin-right: -2rem;
+
+// 			}	
+// 		}
+
+// 		// &:before {
+// 		// 	content: counter(item);
+// 		// 	margin-left: -2rem;
+// 		// 	width: 2rem;
+// 		// 	display: inline-block;
+// 		// }
+// 		&:after {
+// 			clear: both;
+// 		}
+// 		&--active {
+// 			position: sticky;
+// 			top: 0;
+// 			bottom: 0;
+// 			color: red;
+// 			background: yellow;
+// 			z-index: 50;
+// 			mix-blend-mode: difference;
+// 		}
+// 	}

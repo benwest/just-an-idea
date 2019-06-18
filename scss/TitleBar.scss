@@ -1,0 +1,38 @@
+.title-bar {
+	display: flex;
+	padding: 1rem;
+	flex-shrink: 0;
+	@media ( min-width: $phone-breakpoint ) {
+		padding: 1rem .5rem;
+	}
+	align-items: center;
+	&__left {
+		width: 2em;
+	}
+	&__center {
+		flex-grow: 1;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__right {
+		width: 2em;
+		text-align: right;
+	}
+	// padding: 1rem 0;
+	// text-align: center;
+	// text-transform: uppercase;
+	// &__battery {
+	// 	position: absolute;
+	// 	right: 1em;
+	// 	top: 1em;
+	// }
+	// &__info {
+	// 	border-radius: 50%;
+	// 	border: 1px solid white;
+	// 	width: 1.5rem;
+	// 	height: 1.5rem;
+	// 	position: absolute;
+	// 	left: 1em;
+	// 	top: 1em;
+	// }
+}

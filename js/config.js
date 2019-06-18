@@ -1,0 +1,6 @@
+module.exports = {
+	PHONE_BREAKPOINT: 500,
+	ABOUT_BREAKPOINT: 800,
+	MARGIN: 60,
+	PHONE_MARGIN: .05
+}
