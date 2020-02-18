@@ -36,9 +36,9 @@ module.exports = {
 			}),
 			m('a', {
 				className: bem( 'list-item', { link: true, disabled: active !== -1 } ),
-				href: '',
+				href: 'https://vimeo.com/280519267',
 				target: '_blank',
-			}, 'Watch the film' )
+			}, 'Watch the trailer' )
 		)
 	}
 }

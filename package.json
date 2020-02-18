@@ -31,7 +31,7 @@
   "dependencies": {
     "buildman": "file:../../buildman/sync",
     "eases": "^1.0.8",
-    "live-server": "^1.2.0",
+    "live-server": "^1.2.1",
     "lodash": "^4.17.10",
     "mithril": "^1.1.6",
     "node-sass": "^4.9.3",

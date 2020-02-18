@@ -20,7 +20,7 @@ module.exports = arg => {
 	if ( typeof arg === 'function' ) {
 		return vnode => {
 			autobind( vnode );
-			return fn( vnode );
+			return arg( vnode );
 		}
 	} else {
 		autobind( arg );
