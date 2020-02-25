@@ -1,5 +1,5 @@
 var m = require('mithril');
-var autobind = require('../utils/autobind');
+// var autobind = require('../utils/autobind');
 var bem = require('../utils/bem');
 
 var View = require('./View');

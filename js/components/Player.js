@@ -32,21 +32,19 @@ var Scrubber = {
 module.exports = {
 	playing: false,
 	loaded: false,
-	oninit: ({ attrs: { video, interview, i, played, onend }, state }) => {
+	oninit: ({ attrs: { video, interview, initialTime, onTimeUpdate, onend }, state }) => {
 		state.audioElement = new Audio();
 		state.audioElement.src = interview.audio;
-		var updateTime = () => {
-			played[ i ] = Math.max( played[ i ], state.audioElement.currentTime );
-			m.redraw();
-		}
-		state.audioElement.addEventListener( 'timeupdate', updateTime );
-		state.audioElement.addEventListener('ended', () => {
-			updateTime();
+		state.audioElement.currentTime = initialTime;
+		state.onTimeUpdate = () => onTimeUpdate( state.audioElement.currentTime );
+		state.onEnd = () => {
+			state.onTimeUpdate();
 			onend();
 			state.playing = false;
-			state.audioElement.currentTime = 0;
 			m.redraw();
-		})
+		}
+		state.audioElement.addEventListener( 'timeupdate', state.onTimeUpdate );
+		state.audioElement.addEventListener( 'ended', state.onEnd )
 		state.toggle = () => {
 			if ( !state.loaded ) {
 				video.src = interview.video[ window.innerWidth < PHONE_BREAKPOINT ? 0 : 1 ];
@@ -58,13 +56,17 @@ module.exports = {
 				: state.audioElement.play();
 			state.playing = !state.playing;
 		}
+		state.toggle();
 	},
 	onbeforeremove: ({ state }) => {
-		state.audioElement.src = '';
-		return wait( 500 );
+		state.audioElement.removeEventListener( 'timeupdate', state.onTimeUpdate );
+		state.audioElement.removeEventListener( 'ended', state.onEnd )
+		return wait( 500 ).then( () => {
+			state.audioElement.src = '';
+		})
 	},
 	view: ({
-		attrs: { interview, i, played, video },
+		attrs: { interview },
 		state: { audioElement, toggle, playing },
 	}) => {
 		return m('.player', { onclick: stopPropagation },
