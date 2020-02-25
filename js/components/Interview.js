@@ -10,7 +10,6 @@ module.exports = {
 	currentTime: 0,
 	oninit: ({ attrs: { played, i }, state }) => {
 		state.onTimeUpdate = t => {
-			console.log( 'current time', t );
 			state.currentTime = t;
 			played[ i ] = Math.max( played[ i ], t );
 			m.redraw();
