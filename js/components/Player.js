@@ -36,20 +36,12 @@ module.exports = {
 		state.audioElement = new Audio();
 		state.audioElement.src = interview.audio;
 		state.audioElement.currentTime = initialTime;
-		// state.onTimeUpdate = () => onTimeUpdate( state.audioElement.currentTime );
-		// state.onEnd = () => {
-		// 	state.onTimeUpdate();
-		// 	onend();
-		// 	state.playing = false;
-		// 	m.redraw();
-		// }
-		// state.audioElement.addEventListener( 'timeupdate', state.onTimeUpdate );
-		// state.audioElement.addEventListener( 'ended', state.onEnd )
 		state.audioEvents = {
 			timeupdate: () => onTimeUpdate( state.audioElement.currentTime ),
 			ended: () => {
 				onTimeUpdate( state.audioElement.currentTime );
 				onend();
+				onTimeUpdate( 0 );
 				state.playing = false;
 				m.redraw();
 			},
