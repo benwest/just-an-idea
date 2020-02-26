@@ -74,13 +74,13 @@ module.exports = {
 			// state.playing = !state.playing;
 		}
 		for ( let event in state.audioEvents ) {
-			state.audioElement.addEventlistener( event, state.audioEvents[ event ] );
+			state.audioElement.addEventListener( event, state.audioEvents[ event ] );
 		}
 		state.toggle();
 	},
 	onbeforeremove: ({ state }) => {
 		for ( let event in state.audioEvents ) {
-			state.audioElement.rmeoveEventlistener( event, state.audioEvents[ event ] );
+			state.audioElement.removeEventListener( event, state.audioEvents[ event ] );
 		}
 		return wait( 500 ).then( () => {
 			state.audioElement.src = '';

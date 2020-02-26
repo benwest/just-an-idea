@@ -9,7 +9,7 @@ module.exports = {
 	active: -1,
 	oninit: ({ attrs: { onend }, state }) => {
 		state.onclick = i => {
-			state.active = state.active === -1 ? i : -1;
+			state.active = state.active === i ? -1 : i;
 			if ( state.active === -1 ) onend();
 		}
 		state.onend = () => {

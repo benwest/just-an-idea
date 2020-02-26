@@ -11,7 +11,13 @@ var interview = assets => interview => Object.assign( {}, interview, {
 	duration: duration( assets.path( interview.audio ) )
 });
 
-module.exports = assets => layout( html`
+module.exports = assets => layout( {
+	title: content.title,
+	url: content.url,
+	description: content.about,
+	image: '/static/social.png',
+	favicon: '/static/favicon.png'
+}, html`
 	<video loop muted autoplay playsinline width="1024" height="1024"></video>
 	<main></main>
 	<script type="text/json" id="data">
