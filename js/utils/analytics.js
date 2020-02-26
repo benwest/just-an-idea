@@ -8,6 +8,8 @@ const idle = fn => {
     }
 }
 
+
+
 export default uid => {
     idle( () => {
         Fingerprint2.get( undefined, components => {

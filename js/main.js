@@ -21,3 +21,4 @@ var init = () => {
 init();
 
 video.addEventListener('play', () => video.style.opacity = 1 );
+

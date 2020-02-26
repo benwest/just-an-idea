@@ -39,7 +39,8 @@
 	&__scrubber-handle {
 		position: absolute;
 		height: $height;
-		width: 100%;
+		left: 0;
+		right: 1px;
 		pointer-events: none;
 		border-left: $stroke solid white;
 		top: 0;
