@@ -30,7 +30,7 @@ module.exports = ( { title, url, description, image, favicon }, children ) => ht
 			_paq.push(['trackPageView']);
 			_paq.push(['enableLinkTracking']);
 			(function() {
-				var u="//analytics.bewe.me/";
+				var u="https://analytics.bewe.me/";
 				_paq.push(['setTrackerUrl', u+'matomo.php']);
 				_paq.push(['setSiteId', '1']);
 				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
