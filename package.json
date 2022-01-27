@@ -35,7 +35,7 @@
     "lodash": "^4.17.10",
     "mithril": "^1.1.6",
     "node-sass": "^4.9.3",
-    "three": "^0.92.0",
+    "three": "^0.137.0",
     "three-css3drenderer": "^1.0.1",
     "three-fbx-loader": "^1.0.3",
     "three-orbit-controls": "^82.1.0"
