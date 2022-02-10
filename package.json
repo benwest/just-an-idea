@@ -34,7 +34,7 @@
     "live-server": "^1.2.1",
     "lodash": "^4.17.10",
     "mithril": "^1.1.6",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "three": "^0.92.0",
     "three-css3drenderer": "^1.0.1",
     "three-fbx-loader": "^1.0.3",
